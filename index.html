@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Computer Use Survey Form</title>
+    <link rel="stylesheet" href="styles17.css">
+  </head>
+  <body>
+    <h1 id="title">Computer Use Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our market</p>
+    <form id="survey-form" method="post">
+     <fieldset>
+      <label for="name" id="name-label">Enter your Name (Last name, First name)<input id="name" name="name" type="text" placeholder="Enter your name" required ></label>
+      <label for="email" id="email-label">Enter your Email (Use all small letters)<input id="email" name="email" type="email" placeholder="Enter your Email" required ></label>
+      <label for="number" id="number-label">Enter your Age (optional)<input id="number" type="number" name="age" min="13" max="120" placeholder="Age" ></label>
+     </fieldset>
+     <fieldset>
+      <label for="dropdown">How often do you use your computer?
+         <select id="dropdown" name="dropdown">
+           <option value="">Select one</option>
+           <option value="1">Less than 30 minutes</option>
+           <option value="2">1 Hour </option>
+           <option value="3">2 Hours</option>
+           <option<label for="dro value="4">3 Hours</option>
+           <option value="5">More than 3 Hours</option>
+         </select>
+       </label>
+     </fieldset>
+     <fieldset>
+      <legend>Would you recommend the purchase of computer to a friend?</legend>
+      <label for="definitely" value="1"><input class="inline" id="definitely" type="radio" name="recommend-type" value="definitely" checked>Definitely</label>
+      <label for="maybe" value="2"><input class="inline" id="maybe" type="radio" name="recommend-type" value="maybe">Maybe</label>
+      <label for="Not-sure" value="3"><input class="inline" id="Not-sure" type="radio" name="recommend-type" value="Not-sure">Not sure</label>
+     </fieldset>
+     <fieldset>
+      <label for="dropdown">What do you use the computer for?
+         <select id="dropdown" name="dropdown">
+           <option value="">Select an option</option>
+           <option value="1">Internet</option>
+           <option value="2">Learning </option>
+           <option value="3">Work</option>
+           <option label value="4">Gaming</option>
+         </select>
+       </label>
+     </fieldset>
+     <fieldset>
+      <legend>Which brand have you heard of? (Check all that apply) </legend>
+      <label for="Dell"><input class="inline" id="Dell" type="checkbox" name="brand" value="Dell" checked>Dell</label>
+      <label for="IBM"><input class="inline" id="IBM" type="checkbox" name="brand" value="IBM">IBM</label>
+      <label for="Lenovo"><input class="inline" id="Lenovo" type="checkbox" name="brand" value="Lenovo">Lenovo</label>
+      <label for="Acer"><input class="inline" id="Acer" type="checkbox" name="brand" value="Acer">Acer</label>
+      <label for="comment">Please provide your own comments on computer use:
+      <textarea id="comment" rows= "3" cols="25" placeholder="I like to use my laptop more than desktop..."></textarea>
+      </label>
+     </fieldset>
+  <input id ="submit" type="submit" value="Submit"/>
+   </form>
+  </body>
+<html>
